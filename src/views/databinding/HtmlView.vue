@@ -1,12 +1,13 @@
 <template>
-  <h1>Welcome {{ title2 }}</h1>
+  <h1>html String</h1>
+  <h1 v-html="htmlString"></h1>
 </template>
 <script>
 export default {
   components: {},
   data() {
     return {
-      title2: 'lan'
+      htmlString: '<p style="color:red;">red text</p>'
     }
   },
   setup() {},

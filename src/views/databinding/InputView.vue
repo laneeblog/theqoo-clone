@@ -1,12 +1,16 @@
 <template>
-  <h1>Welcome {{ title2 }}</h1>
+  <h1>Input View</h1>
+  <div>
+    <input type="text" v-model="valueModel">
+    <h2>{{ valueModel }}</h2>
+  </div>
 </template>
 <script>
 export default {
   components: {},
   data() {
     return {
-      title2: 'lan'
+      valueModel: '입력해봐'
     }
   },
   setup() {},
